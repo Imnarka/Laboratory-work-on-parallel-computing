@@ -19,7 +19,7 @@ int main()
 #pragma omp parallel
 	{
 		if (omp_get_thread_num() % 2 == 1) {
-			double value = (float)rand() / RAND_MAX * (23.0 * 3.0 - 23.0 - 3.0) + 23.0 - 3.0;
+			double value = (float)rand() / RAND_MAX * (23.0 * 3.0 - 23.0 - 3.0) + (23.0 - 3.0);
 			printf("I am %d thread from %d threads, value %f\n", omp_get_thread_num(), n, value);
 		}
 	}
