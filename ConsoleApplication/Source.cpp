@@ -21,5 +21,5 @@ int main()
 		printf("I am %d thread from %d threads, value %f\n", omp_get_thread_num(), n, value);
 	}
 
-	return 0;
+	return 0;	
 }
